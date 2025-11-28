@@ -15,9 +15,9 @@
                     }
                     &.link--system {
                         background-image: url('../images/banners/link_system.jpg');
-                        @media (max-width: 699px) {
-                            margin-top: $gutter;
-                        }
+                        // @media (max-width: 699px) {
+                        //     margin-top: $gutter;
+                        // }
                     }
                     &.link--analyze {
                         background-image: url('../images/banners/link_analyze.jpg');
