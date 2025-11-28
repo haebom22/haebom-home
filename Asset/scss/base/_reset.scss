@@ -1,0 +1,682 @@
+@charset "utf-8";
+* {
+	box-sizing: border-box;
+	&::before {
+		box-sizing: border-box;
+	}
+	&::after {
+		box-sizing: border-box;
+	}
+}
+h1 {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+h2 {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+h3 {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+h4 {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+h5 {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+h6 {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+p {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+blockquote {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+pre {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+a {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	text-decoration: none;
+	&:not([class]) {
+		text-decoration-skip-ink: auto;
+	}
+}
+abbr {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+acronym {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+address {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+big {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+cite {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+code {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+del {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+dfn {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+em {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+img {
+	display: block;
+	// max-width: 100%;
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	-ms-interpolation-mode: bicubic;
+}
+ins {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+kbd {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+q {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+s {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+samp {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+small {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+strike {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+strong {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+sub {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+sup {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+tt {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+var {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+b {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+u {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+i {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+center {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+dl {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+dt {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+dd {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+ol {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+ul {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+li {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+fieldset {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+form {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+label {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+legend {
+  padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+table {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+caption {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+tbody {
+  padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+tfoot {
+  padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+thead {
+  padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+tr {
+  padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+th {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+td {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article {
+	display: block;
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	>* {
+		+ {
+			* {
+				margin-top: 1em;
+			}
+		}
+	}
+}
+aside {
+	display: block;
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+}
+canvas {
+	max-width: 100%;
+	display: inline-block;
+	*display: inline;
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	*zoom: 1;
+}
+details {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	display: block;
+}
+embed {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+}
+figure {
+	display: block;
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+}
+figcaption {
+	display: block;
+    padding: 0;
+	border: 0;
+	font-size: 100%;
+	margin: 0;
+}
+footer {
+	display: block;
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+}
+header {
+	display: block;
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+}
+hgroup {
+	display: block;
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+}
+menu {
+	display: block;
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+}
+nav {
+	display: block;
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+}
+output {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+}
+ruby {
+	padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+}
+section {
+	display: block;
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+}
+summary {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+}
+time {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+}
+mark {
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+}
+audio {
+	max-width: 100%;
+	display: inline-block;
+	*display: inline;
+    padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	*zoom: 1;
+	&:not([controls]) {
+		display: none;
+		height: 0;
+	}
+}
+video {
+	max-width: 100%;
+	display: inline-block;
+	*display: inline;
+	padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	*zoom: 1;
+}
+ul[class] {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+ol[class] {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+body {
+  // min-height: 100vh;
+	margin: 0;
+	line-height: 1.5;
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+}
+html {
+	// font-size: 100%;
+	// -webkit-text-size-adjust: 100%;
+	// -ms-text-size-adjust: 100%;
+	input[type="button"] {
+		-webkit-appearance: button;
+		cursor: pointer;
+		*overflow: visible;
+	}
+	input[disabled] {
+		cursor: default;
+	}
+}
+input[type=search] {
+	&::-webkit-search-cancel-button {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+	}
+	&::-webkit-search-decoration {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+	}
+	&::-webkit-search-results-button {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+	}
+	&::-webkit-search-results-decoration {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+	}
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	-webkit-appearance: textfield;
+}
+input[type="checkbox"] {
+	*height: 13px;
+	*width: 13px;
+	padding: 0;
+	box-sizing: border-box;
+}
+input[type="radio"] {
+  *height: 13px;
+	*width: 13px;
+    padding: 0;
+	box-sizing: border-box;
+}
+textarea {
+	margin: 0;
+	overflow: auto;
+	resize: vertical;
+	vertical-align: baseline;
+	*vertical-align: middle;
+	font-size: 100%;
+}
+input {
+    margin: 0;
+	vertical-align: baseline;
+	*vertical-align: middle;
+	font-size: 100%;
+	line-height: normal;
+	&::-moz-focus-inner {
+		border: 0;
+		padding: 0;
+	}
+}
+button {
+    margin: 0;
+	vertical-align: baseline;
+	*vertical-align: middle;
+	font-size: 100%;
+	line-height: normal;
+	text-transform: none;
+	-webkit-appearance: button;
+	cursor: pointer;
+	*overflow: visible;
+	&::-moz-focus-inner {
+		border: 0;
+		padding: 0;
+	}
+}
+select {
+    margin: 0;
+	vertical-align: baseline;
+	*vertical-align: middle;
+	font-size: 100%;
+	text-transform: none;
+}
+input[type="reset"] {
+	-webkit-appearance: button;
+	cursor: pointer;
+	*overflow: visible;
+}
+input[type="submit"] {
+	-webkit-appearance: button;
+	cursor: pointer;
+	*overflow: visible;
+}
+button[disabled] {
+	cursor: default;
+}
+[hidden] {
+	display: none;
+}
+@media (prefers-reduced-motion: reduce) {
+	* {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}

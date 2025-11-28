@@ -1,0 +1,46 @@
+%button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: none;
+    white-space : nowrap;
+    font-size: normal;
+    font-weight: $font-bold;
+    line-height: inherit;
+    appearance: none;
+    cursor: pointer;
+    &:disabled{
+        cursor: not-allowed;
+    }    
+}
+
+%label {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: none;
+    white-space : nowrap;
+    font-weight: $font-bold;
+    line-height: 1;
+    appearance: none;
+}
+
+%badge {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: none;
+    white-space : nowrap;
+    font-weight: $font-bold;
+    letter-spacing: 0.02rem;
+    line-height: 1;
+    appearance: none;
+}

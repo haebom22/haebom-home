@@ -1,0 +1,115 @@
+h3 {
+    &.heading {
+        // font-size: 1.5rem;
+        font-size: 2rem;
+        color: $primary;
+        font-weight: $font-bolder;
+        &:after {
+            @include title-underline (
+                grid,   
+                38px, 
+                3px, 
+                $primary
+            );
+            margin: {
+                top: ($gutter * 2);
+                right: 0;
+                bottom: ($gutter * 2);
+                left: 0;
+            }
+        }
+    }
+}
+.solutions {
+    margin: {
+        top: ($gutter * 10);
+        right: 0;
+        bottom: ($gutter * 10);
+        left: 0;
+    }
+    @media (max-width: 699px) {
+        margin: {
+            top: ($gutter * 5);
+            right: 0;
+            bottom: ($gutter * 5); 
+            left: 0;
+        };
+    }
+    &:last-of-type {
+        margin: {
+            top: ($gutter * 10);
+            right: 0;
+            bottom: ($gutter * 10); 
+            left: 0;
+        };
+        @media (max-width: 699px) {
+            margin: {
+                top: ($gutter * 3);
+                right: 0;
+                bottom: ($gutter * 5); 
+                left: 0;
+            };
+        }
+    }
+    .desc {
+        margin: {
+            top: ($gutter * 3);
+            right: 0;
+            bottom: ($gutter * 3);
+            left: 0;
+        }
+    }
+    .img-box {
+        width: 100%;
+        height: auto;
+        &.width--sm {
+            .img-fluid{
+                width: 60%;
+                height: auto;
+            }
+            @media (max-width: 699px) {
+                .img-fluid {
+                    width: 100%;
+                }
+            }
+        }
+        + .img-box {
+            margin-top: ($gutter * 2);
+        }
+    }
+    .list-box {
+        margin: {
+            top: ($gutter * 2);
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+        dt {
+            display: inline-flex;
+            align-items: center;
+            margin: {
+                top: $gutter;
+                right: 0;
+                bottom: $gutter;
+                left: 0;
+            }
+            span {
+                display: inline-flex;
+                + span {
+                    margin-left: $gutter;
+                }
+            }
+        }
+        dd {
+            display: list-item;
+            list-style-type: square;
+            margin: {
+                top: ($gutter * 1);
+                right: 0;
+                bottom: ($gutter * 1);
+                left: ($gutter * 2) - 2px;
+            }
+            color: $dark;
+        }
+    }
+}

@@ -1,0 +1,116 @@
+.banner {
+    &-top {
+        position: relative;
+        display: grid;
+        width: 100vw;
+        height: 480px;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-color: rgba($color: $black, $alpha: 0.4);
+        background-blend-mode: overlay;
+        overflow: hidden;
+        .wave {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 200%;
+            height: 180px;
+            animation: waveMove 8s ease-in-out infinite alternate;
+            @keyframes waveMove {
+                0% {
+                    transform: translateX(0);
+                }
+                100% {
+                    // transform: translateX(-25%);
+                    transform: translateX(-40%); 
+                    // transform: translateX(-15%);
+                }
+            }
+        }
+        @media (max-width: 699px) {
+            height: 360px;
+            @media (max-width: 699px) {
+                // .wave path {
+                    //     d: path("M0,80 C480,160 960,0 1440,80 L1440,160 L0,160 Z");
+                    // }
+            }
+        }
+    }
+}
+    
+.banner {
+    &--main {
+        background-image: url('../images/banners/main_top.jpg');
+        @media (max-width: 699px) {
+
+        }
+    }
+    &--about {
+        background-image: url('../images/banners/about_top.jpg');
+        height: 280px;
+        @media (max-width: 699px) {
+            height: 180px;
+        }
+        .wave {
+            height: 120px;
+            @media (max-width: 699px) {
+                height: 60px;
+            }
+        }
+    }
+    &--solutions {
+        height: 320px;
+        background-image: url('../images/banners/solutions_top.jpg');    
+        background-position: top center;
+        @media (max-width: 699px) {
+            height: 160px;
+        }
+        .wave {
+            height: 180px;
+            @media (max-width: 699px) {
+                height: 90px;
+            }
+        }
+    }
+    &--projects {
+        height: 300px;
+        background-image: url('../images/banners/projects_top.jpg');  
+        @media (max-width: 699px) {
+            height: 160px;
+        }
+        .wave {
+            @media (max-width: 699px) {
+                height: 90px;
+            }
+        }  
+    }
+    &--map {
+        height: 240px;
+        background-image: url('../images/banners/map_top.jpg');   
+        @media (max-width: 699px) {
+            height: 120px;
+        } 
+        .wave {
+            @media (max-width: 699px) {
+                height: auto; /* 배너 하단 파도 높이 */
+                min-height: auto; 
+                background-position: bottom center;
+            }
+        }
+    }
+}
+
+@media (min-width: 1px) and (max-width: 767px) {
+    
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+}
+@media (min-width: 1025px) and (max-width: 1680px) {
+    
+}
+@media (min-width: 1681px) {
+    
+}

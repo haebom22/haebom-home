@@ -1,0 +1,65 @@
+h1{
+    &.heading {
+        @include heading-h1;
+    }
+}
+h2{
+    &.heading {
+        @include heading-h2;
+    }
+}
+h3{
+    &.heading {
+        @include heading-h3;
+    }
+}
+
+.header {
+    h2 {
+        &.heading {
+            margin: {
+                top: calc($gutter * 2);
+                right: 0;
+                bottom: calc($gutter * 2);
+                left: 0;
+            };
+            color: $primary;
+        }
+    }
+    h3 {
+        &.heading {
+            display: flex;
+            align-self: center;
+            margin: {
+                top: 0;
+                right: 0;
+                bottom: $gutter;
+                left: 0;
+            };
+            color: $black;
+            .icon--img {
+                margin-right: calc($gutter / 2);
+            }
+        }
+    }
+    h4{ 
+        &.heading {
+            margin: {
+                top: 0;
+                right: 0;
+                bottom: $gutter;
+                left: 0;
+            };
+        }
+    } 
+    h5{ 
+        &.heading {
+            margin: {
+                top: 0;
+                right: 0;
+                bottom: $gutter;
+                left: 0;
+            };
+        }
+    } 
+}

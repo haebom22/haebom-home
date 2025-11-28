@@ -1,0 +1,199 @@
+.projects {
+    margin: {
+        top: ($gutter * 2);
+        right: 0;
+        bottom: ($gutter * 2); 
+        left: 0;
+    };
+    &:last-of-type {
+        margin: {
+            top: ($gutter * 2);
+            right: 0;
+            bottom: ($gutter * 10); 
+            left: 0;
+        };
+        @media (max-width: 699px) {
+            margin: {
+                top: ($gutter * 2);
+                right: 0;
+                bottom: ($gutter * 5); 
+                left: 0;
+            };
+        }
+    }
+}
+.project {
+    &__box {
+        border-radius: ($gutter * 2);
+    }
+    &__title {
+        margin-top: $gutter;
+        font-size: 1.5rem;
+        font-weight: $font-bolder;
+        @media (max-width: 699px) {
+            font-size: 1.375rem;        
+        }
+    }
+    &__badge {
+        display: inline-flex;
+        padding: {
+            top: ($gutter - 2px);
+            right: ($gutter * 1.8);
+            bottom: ($gutter - 3px); 
+            left: ($gutter * 1.8);
+        };
+        border-radius: $gutter;
+        font-size: 0.8125rem;
+        font-weight: $font-bold;
+        color: $white;
+        background-color: $primary;
+    }
+    &__desc {
+        
+    }
+    &__year {
+        display: grid;
+        position: relative;
+        font-size: $font-small;
+        font-weight: $font-bold;
+    }    
+}
+
+.project {
+    &__box {
+        &.desc-box {
+            @media (max-width: 767px) {
+                height: auto;
+            }
+            @media (width: 768px) {
+                height: 456px;
+            }
+            width: 100%;
+            height: 400px;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            padding: {
+                top: ($gutter * 4);
+                right: ($gutter * 3);
+                bottom: ($gutter * 4); 
+                left: ($gutter * 3);
+            };
+            background-color: $white;
+            box-shadow: $cubic-shadows;
+            .project {
+                &__badge {
+                    order: -1;
+                }
+                &__title {
+                    width: 100%;
+                    order: 0;
+                    color: $black;
+                }
+                &__img {
+                    order: 1;
+                    display: none;
+                    @media (max-width: 699px) {
+                        display: block;
+                        margin-top: ($gutter * 2);
+                    }
+                }
+                &__desc {
+                    order: 2;
+                    margin-top: ($gutter * 2);
+                }
+                &__year {
+                    order: 3;
+                    margin-top: ($gutter * 2);
+                    color: $black;
+                    &:after {
+                        @include title-underline (
+                            grid,   
+                            100%, 
+                            2px, 
+                            $black
+                        );
+                    }
+                }
+                &__link {
+                    display: none;
+                    order: 4;
+                    width: 100%;
+                    @media (max-width: 699px) {
+                        display: block;
+                        margin-top: ($gutter * 2);
+                    }
+                }
+
+            }
+        }
+    }
+}
+.project {
+    &__box {
+        &.img-box {
+            @media (max-width: 699px) {
+                display: none;
+            }
+            position: relative;
+            .project {
+                &__img {
+                    position: relative;
+                    content: '';
+                    display: block;
+                    width: 100%;
+                    height: 400px;
+                    border-radius: ($gutter * 2);
+                    background-size: cover;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-color: rgba($color: $black, $alpha: 0.55);
+                    background-blend-mode: overlay;
+                    @media (width: 768px) {
+                        height: 456px;
+                    }
+                    &.project--srilanka {
+                        background-image: url('../images/banners/projects_srilanka.jpg');
+                        @media (max-width: 699px) {
+                            margin-top: ($gutter * 2);
+                        }
+                    }
+                    &.project--bluecarbon {
+                        background-image: url('../images/banners/projects_bluecarbon.jpg');
+                    }
+                    &.project--bigdata-coast {
+                        background-image: url('../images/banners/projects_bigdata-coast.jpg');
+                    }
+                    &.project--JOISS {
+                        background-image: url('../images/banners/projects_JOISS.jpg');
+                    }
+                    &.project--bigdata-competition {
+                        background-image: url('../images/banners/solutions_education2.jpg');
+                    }
+                }
+                &__year {
+                    color: $white;
+                    }
+                &__title {  
+                    color: $white;
+                }
+                &__link {  
+                    margin-top: ($gutter * 2);
+                }
+            }
+            figcaption {
+                position: absolute;
+                top: 50%;
+                right: 0;
+                left: 0;
+                // transform: translateY(-50%);
+                padding: {
+                    top: calc($gutter * 2);
+                    right: ($gutter * 2);
+                    bottom: calc($gutter * 2); 
+                    left: ($gutter * 2);
+                };
+            }
+        }
+    }
+}

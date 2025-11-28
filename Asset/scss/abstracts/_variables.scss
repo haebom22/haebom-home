@@ -1,0 +1,62 @@
+$gutter: 8px;
+
+$primary-darker: #001E48;
+$primary-dark: #002D6B;
+
+$primary: #003C8F;
+
+$primary-light-500: #3363A5;
+$primary-light-400: #668ABC;
+$primary-light-300: #99B1D2;
+$primary-light-200: #CCD8E9;
+$primary-light-100: #EBEFF6;
+
+$lightest: #f1f2f3;
+$lighter: #d5d7da;
+$light: #AEB1B4;
+$gray: #6F7174;
+$dark: #4A4C4D;
+$darker: #252627;
+
+// $lightest: #EAEBEC;
+// $lighter: #D5D7DA;
+// $light: #AEB1B4;
+// $gray: #6F7174;
+// $dark: #4A4C4D;
+// $darker: #252627;
+
+$white: #fff;
+$black: #000;
+$reject: $black;
+$color-normal: $gray;
+
+$yellow: #EC9B01;
+$yellow-light: #FFC24E; 
+$yellow-dark: #9F6900;
+
+$warning: $yellow;
+$color-success: $primary;
+
+$danger-light: #CE6243;
+$danger: #C23B13;
+$danger-dark: #922C0F;
+
+$prefix: color;
+$color-list: (
+    'primary' $prefix $primary,
+    'purple' $prefix $yellow,
+    'danger' $prefix $danger,
+    'gray' $prefix $gray
+);
+
+$font-small: 0.875rem;
+$font-lg: 1.125rem;
+
+$font-light: 300;
+$font-normal: 400;
+$font-bold: 700;
+$font-bolder: 800;
+
+$cubic-shadows: 8px 8px 16px 0 rgba(0, 0, 0, 0.15),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.5);
+$flat-shadows: 0 10px 6px -6px $light;

@@ -1,0 +1,53 @@
+.map {
+    margin: {
+        top: ($gutter * 2);
+        right: 0;
+        bottom: ($gutter * 10);
+        left: 0;
+    }
+    @media (max-width: 699px) {
+        margin: {
+            top: ($gutter * 2);
+            right: 0;
+            bottom: ($gutter * 5);
+            left: 0;
+        }
+    }
+    div {
+        margin: {
+            top: ($gutter * 2);
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    }
+    dt {
+        display: flex;
+        align-items: center;
+        font-size: 1.25rem;
+        font-weight: $font-bold;
+        color: $primary;
+        .icon--img {
+            width: ($gutter * 2.6);
+            height: ($gutter * 2.6);
+            margin-right: $gutter;
+        }
+    }
+    dd {
+        margin-top: $gutter;
+        span {
+            display: inline-flex;
+            &:first-child {
+                font-weight: $font-bold;
+                color: $dark;
+            }
+            &:last-child {
+                &::before {
+                    content: ':';
+                    display: inline-flex;
+                    margin-right: $gutter;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,499 @@
+@mixin element-hidden {
+    overflow: hidden;
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    &.focusable {
+        &:focus {
+            position: static;
+            width: auto;
+            height: auto;
+            margin: 0;
+            overflow: visible;
+            clip: auto;
+        }
+    }  
+}
+@mixin box-sizing {
+    -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+@mixin img-responsive {
+    max-width: 100%;
+    height: auto;
+} 
+
+@mixin clearfix {
+    &::after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
+
+@mixin dim {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, .5);
+}
+
+@mixin hide {
+    display: none;
+}
+
+@mixin heading-h1 {
+    font-size: 1.375rem;
+    font-weight: $font-bolder;
+    line-height: 20px;
+}
+@mixin heading-h2 {
+    display: inline-flex;
+    font-size: 1.25rem;;
+    font-weight: $font-bolder;
+    line-height: 20px;
+}
+@mixin heading-h3 {
+    font-size: 1.125rem;
+    font-weight: $font-bolder;
+    color: $dark;
+}
+@mixin heading-h4 {
+    font-size: 1rem;
+    font-weight: $font-bold;
+    color: $dark;
+}
+@mixin heading-h6 {
+    font-size: 0.875;
+    font-weight: $font-bold;
+    color: $dark;
+}
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	border-radius: $radius;
+	background-clip: padding-box;
+}
+
+@mixin img-background($display, $width, $height, $bg-values) {
+    content: '';
+    display: $display;
+    width: $width;
+    height: $height;
+    background-image: $bg-values;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+@mixin normal-link {
+    text-decoration: none;
+    color: inherit;
+    background: transparent;
+}
+
+@mixin title-underline($display, $width, $height, $bg-color) {
+    content: '';
+    display: $display;
+    width: $width;
+    height: $height;
+    background-color: $bg-color;
+}
+@mixin title-border($bg-color) {
+    content: '';
+    display: inline-block;
+    width: 3.5px;
+    height: 16px;
+    margin-right: $gutter;
+    vertical-align: middle;
+    background-color: $bg-color;
+}
+@mixin triangle-left($border-top, $border-left, $border-bottom, $bg-color) {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: $border-top solid transparent;
+    border-right: $border-left solid $bg-color;
+    border-bottom: $border-bottom solid transparent;
+}
+@mixin triangle-right($border-top, $border-left, $border-bottom, $bg-color) {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: $border-top solid transparent;
+    border-left: $border-left solid $bg-color;
+    border-bottom: $border-bottom solid transparent;
+}
+@mixin triangle-top($border-left, $border-right, $border-bottom, $bg-color) {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: $border-left solid transparent;
+    border-right: $border-right solid transparent;
+    border-bottom: $border-bottom solid $bg-color;
+}
+@mixin triangle-bottom($border-left, $border-right, $border-top, $bg-color) {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: $border-left solid transparent;
+    border-right: $border-right solid transparent;
+    border-top: $border-top solid $bg-color;
+}
+@mixin tooltip-arrow($bg-color) {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 5px solid $bg-color;
+}
+
+@mixin square($width, $height, $bg-color) {
+    content: '';
+    display: inline-block;
+    width: $width;
+    height: $height;
+    background-color: $bg-color;
+}
+@mixin list-square($width, $height, $bg-color) {
+    content: '';
+    display: inline-flex;
+    width: $width;
+    height: $height;
+    background-color: $bg-color;
+}
+
+@mixin required($required-position, $left-position) {
+    content: '*';
+    display: inline-block;
+    position: $required-position;
+    left: $left-position;
+    color: $danger-dark;
+}
+@mixin required-right($required-position, $left-position) {
+    content: '*';
+    display: inline-block;
+    position: $required-position;
+    right: $left-position;
+    color: $danger-dark;
+}
+
+@mixin position-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin full-screen {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+@mixin transition($property...) {
+    transition: $property;
+}
+
+@mixin border-radius($radius: '') {
+    border-radius: $radius;
+}
+
+@mixin getSize ($height, $font-size) {
+    height: $height;
+    $padding: floor(($height - ($font-size * 1.5)) / 2);
+    padding-left: ($gutter * 2);
+    padding-right: ($gutter * 2);
+    // padding-top: ($padding - 0);
+    font-size: $font-size;
+}
+@mixin button-xl{
+    @include getSize(38px, 17px);
+}
+@mixin button-lg{
+    @include getSize(34px, 16px);
+}
+@mixin button-md{
+    @include getSize(30px, 14px);
+}
+@mixin button-sm{
+    @include getSize(26px, 12px);
+}
+@mixin button-xs{
+    @include getSize(22px, 11px);
+}
+
+@mixin opacity($opacity) {
+    opacity: $opacity;
+}
+
+@mixin button($button-color: '', $backbround-color: '', $button-type: '', $button-border: '', $button-size: '') {
+    @extend %button;
+    @include border-radius();
+    @include transition(all 0.3s ease-in-out);
+    
+    &.button--solid{
+        border: 1px solid $button-color;
+        color: $white;
+        background-color: $button-color;
+        
+        &:hover{
+            background-color: shade($button-color, 30%);
+            border-color: shade($button-color, 30%);
+            color: $white;
+        }
+        &:focus{
+            background-color: shade($button-color, 30%);
+            border-color: shade($button-color, 30%);
+            color: $white;
+        }
+        &:active,
+        &.active{
+            background-color: shade($button-color, 40%);
+            border-color: shade($button-color, 40%);
+            color: $white;
+        }
+        &.disabled,
+        &[disabled] {
+            cursor: disabled;
+            @include opacity(1);
+            border-color: tint($button-color, 70%);
+            background-color: tint($button-color, 70%);
+            &:hover{
+                background-color: tint($button-color, 70%);
+                border-color: tint($button-color, 70%);
+                color: $white;
+            }
+            &:focus{
+                background-color: tint($button-color, 70%);
+                border-color: tint($button-color, 70%);
+                color: $white;
+            }
+        }
+        &:visited {
+            border: 1px solid $button-color;
+            color: $white;
+            background-color: $button-color;
+        }
+        &:target {
+            border: 1px solid $button-color;
+            color: $white;
+            background-color: $button-color;
+        }
+    }
+
+    &.button--line {
+        border: 1px solid $button-color;
+        color: $button-color;
+        background-color: $white;
+
+        &:hover {
+            background-color: shade($button-color, 30%);
+            border-color: shade($button-color, 30%);
+            color: $white;
+        }
+        &:focus {
+            background-color: shade($button-color, 30%);
+            border-color: shade($button-color, 30%);
+            color: $white;
+        }
+        &:active,
+        &.active {
+            background-color: shade($button-color, 30%);
+            border-color: shade($button-color, 30%);
+            color: $white;
+        }
+        &.disabled,
+        &[disabled] {
+            cursor: disabled;
+            @include opacity(1);
+            color: tint($button-color, 60%);
+            border-color: tint($button-color, 60%);
+            &:focus,
+            &:hover{
+                border-color: tint($button-color, 60%);
+                color: $white;
+                background-color: tint($button-color, 80%);                
+            }
+        }
+    }
+
+    @each $i in $color-list {
+        $alt-color: nth($i, 3);
+        &.#{nth($i, 2)}-#{nth($i,1)} {
+            color: $alt-color;
+            border-color: $alt-color;
+            &:hover{
+                border-color: $alt-color;
+                color: $alt-color;
+            }
+        }
+    }
+}
+
+@mixin badge ($badge-color: '', $backbround-color: '', $badge-type: '', $badge-border: '', $badge-size: '') {
+    @extend %badge;
+    @include border-radius();
+    @include transition(all 0.3s ease-in-out);
+    
+    &.badge--solid{
+        border: 1px solid $badge-color;
+        border-radius: 0;
+        color: $white;
+        background-color: $badge-color;
+        
+        &:hover {
+            background-color: shade($badge-color, 30%);
+            border-color: shade($badge-color, 30%);
+            color: $white;
+        }
+        &:focus {
+            background-color: shade($badge-color, 30%);
+            border-color: shade($badge-color, 30%);
+            color: $white;
+        }
+        &:active,
+        &.active {
+            background-color: shade($badge-color, 40%);
+            border-color: shade($badge-color, 40%);
+            color: $white;
+        }
+        &.disabled,
+        &[disabled]{
+            cursor: disabled;
+            @include opacity(1);
+            border-color: tint($badge-color, 70%);
+            background-color: tint($badge-color, 70%);
+            &:hover{
+                background-color: tint($badge-color, 70%);
+                border-color: tint($badge-color, 70%);
+                color: $white;
+            }
+            &:focus{
+                background-color: tint($badge-color, 70%);
+                border-color: tint($badge-color, 70%);
+                color: $white;
+            }
+        }
+        &:visited {
+            border: 1px solid $badge-color;
+            color: $white;
+            background-color: $badge-color;
+        }
+        &:target {
+            border: 1px solid $badge-color;
+            color: $white;
+            background-color: $badge-color;
+        }
+    }
+
+    &.badge--line {
+        border: 1px solid $badge-color;
+        color: $badge-color;
+        background-color: $white;
+
+        &:hover {
+            background-color: shade($badge-color, 30%);
+            border-color: shade($badge-color, 30%);
+            color: $white;
+        }
+        &:focus {
+            background-color: shade($badge-color, 30%);
+            border-color: shade($badge-color, 30%);
+            color: $white;
+        }
+        &:active,
+        &.active {
+            background-color: shade($badge-color, 30%);
+            border-color: shade($badge-color, 30%);
+            color: $white;
+        }
+        &.disabled,
+        &[disabled] {
+            cursor: disabled;
+            @include opacity(1);
+            color: tint($badge-color, 60%);
+            border-color: tint($badge-color, 60%);
+            &:focus,
+            &:hover{
+                border-color: tint($badge-color, 60%);
+                color: $white;
+                background-color: tint($badge-color, 80%);                
+            }
+        }
+    }
+    
+
+    @each $i in $color-list {
+        $alt-color: nth($i, 3);
+        &.#{nth($i, 2)}-#{nth($i,1)} {
+            color: $alt-color;
+            border-color: $alt-color;
+            &:hover {
+                border-color: $alt-color;
+                color: $alt-color;
+            }
+        }
+    }
+}
+
+@mixin badge-xl {
+    @include getSize(38px, 17px);
+}
+@mixin badge-lg {
+    @include getSize(34px, 16px);
+}
+@mixin badge-md {
+    @include getSize(30px, 14px);
+}
+@mixin badge-sm {
+    @include getSize(26px, 12px);
+}
+@mixin badge-xs {
+    @include getSize(23px, 11px);
+}
+
+@mixin mobile {
+    @media (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-tablet - 1px}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-desktop - 1px}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$breakpoint-desktop}) and (max-width: #{$breakpoint-wide - 1px}) {
+        @content;
+    }
+}
+
+@mixin wide {
+    @media (min-width: #{$breakpoint-wide}) and (max-width: #{$breakpoint-wider - 1px}) {
+        @content;
+    }
+}
+@mixin wider {
+    @media (min-width: #{$breakpoint-wider}) {
+        @content;
+    }
+}

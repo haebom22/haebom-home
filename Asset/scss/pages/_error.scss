@@ -1,0 +1,36 @@
+.section--error { 
+    @include full-screen;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 100%;
+    line-height: 1.5;
+    color: $white;
+    background-color: $primary; 
+    h1 {
+        text-align: center;
+        font-size: 15em;
+        font-weight: 100;
+        text-shadow: 0 0 20px rgba(0, 112, 255, 0.8),
+                    0 0 40px rgba(0, 112, 255, 0.6),
+                    0 0 80px rgba(0, 112, 255, 0.4);    
+        filter: drop-shadow(0 0 25px rgba(0, 80, 180, 0.8))
+                drop-shadow(0 0 60px rgba(0, 100, 255, 0.5));
+    }
+    p {
+        margin: {
+            top: ($gutter * 3);
+            right: auto;
+            bottom: ($gutter * 3);
+            left: auto;
+        };
+        font-size: 2em;
+        text-align: center;
+        font-weight: $font-light;
+    }
+}
+
+
+

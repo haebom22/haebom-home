@@ -1,0 +1,53 @@
+.greetings {
+    display: grid;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: rgba($color: $black, $alpha: 0.16);
+    background-blend-mode: overlay;
+    background-image: url('../images/banners/about_greetings.jpg');
+    overflow: hidden;
+    .heading {
+        font-size: 1.5rem;
+        font-size: 2rem;
+        font-weight: $font-bolder;
+        color: $white;
+        &:after {
+            @include title-underline (
+                grid,   
+                38px, 
+                3px, 
+                $white
+            );
+            margin: {
+                top: ($gutter * 2);
+                right: 0;
+                bottom: ($gutter * 2);
+                left: 0;
+            }
+        }
+    }
+    .banner {
+        &__contents {
+            margin: {
+                top: ($gutter * 10);
+                right: 0;
+                bottom: ($gutter * 10);
+                left: 0;
+            }
+        }
+        &__title {
+            text-align: left;
+            @media (max-width: 699px) {
+                display: none;
+            }
+        }
+        &__desc {
+            margin: 0;            
+            text-align: left;
+            &::after {
+                display: none;
+            }
+        }
+    }
+}

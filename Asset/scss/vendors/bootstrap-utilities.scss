@@ -1,0 +1,18 @@
+@import "bootstrap-5.2.3/mixins/banner";
+@include bsBanner(Utilities);
+
+// Configuration
+@import "bootstrap-5.2.3/functions";
+@import "bootstrap-5.2.3/variables";
+@import "bootstrap-5.2.3/maps";
+@import "bootstrap-5.2.3/mixins";
+@import "bootstrap-5.2.3/utilities";
+
+// Layout & components
+@import "bootstrap-5.2.3/root";
+
+// Helpers
+@import "bootstrap-5.2.3/helpers";
+
+// Utilities
+@import "bootstrap-5.2.3/utilities/api";

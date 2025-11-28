@@ -1,0 +1,58 @@
+// 공통
+.banner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    &__contents {
+        padding: {
+            top: 0;
+            right: ($gutter * 2);
+            bottom: 0;
+            left: ($gutter * 2);
+        }
+    }
+    &__title {
+        text-align: center;
+        font-size: 2.5rem;
+        font-size: 2.875rem;
+        font-weight: $font-bolder;
+        color: $white;
+        @media (max-width: 699px) {
+            font-size: 1.5rem;
+        }
+    }
+    &__desc {
+        position: relative;
+        margin: {
+            top: ($gutter * 3);
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+        text-align: center;
+        font-size: 1rem;
+        line-height: 1.5;
+        font-weight: $font-bold;
+        color: $white;
+        &:after {
+            @include title-underline (
+                grid,   
+                38px, 
+                3px, 
+                $white
+            );
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            margin: {
+                top: ($gutter * 3);
+                right: 0;
+                bottom: 0;
+                left: 0;
+            }
+        }
+        @media (max-width: 699px) {
+            font-size: 0.875rem;
+        }
+    }
+}

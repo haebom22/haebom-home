@@ -1,0 +1,175 @@
+.history {
+    display: grid;
+    justify-content: center;
+    .banner {
+        &__contents {
+            display: grid;
+            justify-content: center;
+            margin: {
+                top: ($gutter * 10);
+                right: 0;
+                bottom: ($gutter * 10);
+                left: 0;
+            }
+            @media (max-width: 699px) {
+                margin: {
+                    top: ($gutter * 8);
+                    right: 0;
+                    bottom: ($gutter * 8);
+                    left: 0;
+                }   
+            }
+        }
+    }
+    .heading {
+        position: relative;
+        text-align: center;
+        font-size: 1.5rem;
+        font-size: 2rem;
+        font-weight: $font-bolder;
+        color: $primary;
+        &:after {
+            @include title-underline (
+                grid,   
+                38px, 
+                3px, 
+                $primary
+            );
+            margin: {
+                top: ($gutter * 2);
+                right: 0;
+                bottom: ($gutter * 2);
+                left: 0;
+            }
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    dl {
+        &.list-box {
+            display: grid;
+            grid-template-columns: 80px 1fr;
+            @media (max-width: 699px) {
+                grid-template-columns: 1fr;
+            }
+            margin: {
+                top: ($gutter * 2);
+                right: 0;
+                bottom: 0;
+                left: 0;
+            }
+            &:first-of-type {
+                margin: {
+                    top: ($gutter * 6);
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                }
+            }
+            dd {
+                position: relative;
+                padding: {
+                    top: calc($gutter / 2);
+                    right: 0;
+                    bottom: ($gutter * 2);
+                    left: ($gutter * 3);
+                }
+                border-left: 2px solid $light;                
+                margin: {
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: -8px; // border 기준 중앙 정렬 조정
+                    width: 14px;
+                    height: 14px;
+                    border: 3px solid $primary;
+                    background-color: $white;
+                    border-radius: 50%;
+                    box-sizing: border-box;
+                }
+                @media (max-width: 699px) {
+                    padding: {
+                        top: 0;
+                        right: 0;
+                        bottom: calc($gutter / 2);
+                        left: ($gutter * 2);
+                    }
+                    margin: {
+                        top: calc($gutter * 2);
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                    }
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        left: -8px; // border 기준 중앙 정렬 조정
+                        width: 14px;
+                        height: 14px;
+                        border: 3px solid $primary;
+                        background-color: $white;
+                        border-radius: 50%;
+                        box-sizing: border-box;
+                    }
+                }
+                ul {
+                    li {
+                        list-style: none;
+                        + li {
+                            margin: {
+                                top: ($gutter * 2);
+                                right: 0;
+                                bottom: 0;
+                                left: 0;
+                            }
+                        }
+                    }
+                }
+                span {
+                    display: grid;
+                }
+            }
+        }
+        .list {
+            &__list {
+                display: grid;
+                grid-template-columns: 64px 1fr;
+                @media (max-width: 699px) {
+                    grid-template-columns: 36px 1fr;
+                }
+            }
+            &__year {
+                font-size: 1.25rem;
+                font-weight: $font-bolder;
+                color: $black;
+    
+            }
+            &__month {
+                font-size: 1.25rem;
+                font-weight: $font-bolder;
+                color: $gray;
+            }
+            &__desc {
+                color: $black;
+                span {
+                    + span {
+                        margin: {
+                            top: $gutter;
+                            right: 0;
+                            bottom: 0;
+                            left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

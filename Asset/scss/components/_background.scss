@@ -1,0 +1,27 @@
+.bg-white {
+    background-color: $white !important;
+}
+.bg-transparent {
+    background-color: transparent !important;
+}
+.bg-primary-light {
+    background-color: $primary-light-100 !important;
+}
+.bg-lightest {
+    background-color: $lightest !important;
+}
+
+.border{
+    border: 1px solid $gray !important;
+    &--radius{
+        border-radius: $gutter;
+    }
+}
+
+.azura-lane {
+    background: $white; 
+    // background: -webkit-linear-gradient(to bottom, #ffffff,#ffffff, #86A8E7, #7F7FD5, #91EAE4); 
+    // background: linear-gradient(to bottom, #ffffff, #ffffff, #86A8E7, #7F7FD5, #91EAE4); 
+    background: -webkit-linear-gradient(to bottom, #ffffff, #ffffff, #CFDCF5, #CCCCEE, #D3F7F4); 
+    background: linear-gradient(to bottom, #ffffff, #ffffff, #CFDCF5, #CCCCEE, #D3F7F4); 
+}

@@ -1,0 +1,36 @@
+.partners {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: start;
+    align-items: center;
+    row-gap: ($gutter * 4);
+    margin: {
+        top: ($gutter * 8) !important;
+        right: 0;
+        bottom: ($gutter * 8) !important;
+        left: 0;
+    }
+    li {
+        img {
+            width: 314px;
+            height: auto;
+        }
+        a {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 699px) {
+    .partners {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        li {
+            &:last-child {
+                grid-column: span 2;
+                justify-self: center;
+            }
+        }
+    }
+}

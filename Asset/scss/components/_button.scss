@@ -1,0 +1,38 @@
+.button{
+    &--xl {
+        @include button-xl;
+    }
+    &--lg {
+        @include button-lg;
+    }
+    &--md {
+        @include button-md;
+    }
+    &--sm {
+        @include button-sm;
+    }
+    &--xs {
+        @include button-xs;
+    }
+    &--primary {
+        @include button($primary);
+    }
+    &--gray {
+        @include button($gray);
+    }
+    &--white {
+        @include button($white);
+    }
+    &--danger {
+        @include button($danger);
+    }
+    &--warning {
+        @include button($warning);
+    }
+    &--rounded {
+        @include border-radius(30px);
+    }
+    &--block {
+        width: 100%;
+    }
+}
