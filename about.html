@@ -29,10 +29,10 @@
                                         <a href="index.html" class="">Home</a>
                                     </li>
                                     <li>
-                                        <a href="about.html" class="active">회사소개</a>
+                                        <a href="about.html" class="">회사소개</a>
                                     </li>
                                     <li>
-                                        <a href="business.html" class="">사업분야</a>
+                                        <a href="solutions.html" class="">사업분야</a>
                                     </li>
                                     <li>
                                         <a href="projects.html" class="">주요사례</a>
@@ -53,9 +53,11 @@
     </div>
     <main class="main">
         <div class="banner banner-top banner--about">
-            <svg class="wave" viewBox="0 0 1440 200" preserveAspectRatio="none">
-                <path fill="#fff" d="M1440,100 C960,0 480,200 0,100 L0,200 L1440,200 Z"></path>
-            </svg>
+            <div class="wave-wrap">
+                <svg class="wave" viewBox="0 0 1440 200" preserveAspectRatio="none">
+                    <path fill="#fff" d="M1440,100 C960,0 480,200 0,100 L0,200 L1440,200 Z"></path>
+                </svg>
+            </div>
             <div class="banner__contents">
                 <h2 class="banner__title">
                     데이터로 해양을 읽고,
@@ -63,177 +65,336 @@
                 </h2>
             </div>
         </div>
-        <div class="container about">
-            <div class="row">
-                <div class="col-xs-12 col-md-6 about__img d-none d-md-block">
-                    <img src="Asset/images/banners/about_CI.svg" alt="" class="img-fluid">
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <dl>
-                        <dt>About Us</dt>
-                        <dd>
-                            해봄데이터는 2022년 설립 이래 ‘데이터로 바다를 품다’라는 비전 아래, 해양·수산 분야의 디지털 전환을 선도해 온 전문 기업입니다. 
-                            <br><br>해양수산부, 한국지능정보사회진흥원, 해양환경공단, 국립수산과학원, 한국해양과학기술원 등 유수의 기관과 협력하며, 체계적인 연구데이터 관리부터 최첨단 원격탐사·드론 조사, 블루카본 인벤토리 구축, 교육·홍보 서비스에 이르기까지 토털 솔루션을 제공합니다.
-                        </dd>
-                    </dl>
-                </div>
-            </div>
-            <div class="row flex-md-row-reverse">
-                <div class="col-xs-12 col-sm-6 about__img">
-                    <img src="Asset/images/banners/about_vision.jpg" alt="" class="img-fluid">
-                </div>
-                <div class="col-xs-12 col-sm-6">
-                    <dl>
-                        <dt>성과와 비전</dt> 
-                        <dd>
-                            2023년 ‘대한민국 녹색기후상’ 수상과 국가 블루카본 인벤토리 구축 과제 수행을 통해 업계 리더로 자리매김했습니다. 
-                            <br><br>이제 해봄데이터는 해외 해양수산데이터센터 구축 ODA, 대만 국가 해양연구원과의 협업 등 글로벌 무대에서도 영향력을 확대하고 있습니다.
-                            <br><br>앞으로도 끊임없이 도전하고 혁신하여, 데이터로 바다의 내일을 풍요롭게 여는 든든한 파트너가 되겠습니다.
-                        </dd>
-                    </dl>
-                </div>
-            </div> 
-        </div>
-        <div class="greetings">
-            <div class="container">
-                <div class="row banner__contents">
-                    <div class="col-xs-12 col-md-6">
-                        <div class="banner__title">
-                            데이터를 통해, 
-                            <br>새로운 내일과
-                            <br>더 넓은 바다로 
-                            <br>나아가기를 
-                            <br>희망합니다.
+        <div class="col">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button type="button" class="nav-link active" id="about-tab" data-bs-toggle="tab" data-bs-target="#about-about" role="tab" aria-controls="about-about" aria-selected="false">회사소개</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button type="button" class="nav-link" id="awards-tab" data-bs-toggle="tab" data-bs-target="#about-awards" role="tab" aria-controls="about-awards" aria-selected="false">수상 내역</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button type="button" class="nav-link" id="certification-tab" data-bs-toggle="tab" data-bs-target="#about-certification" role="tab" aria-controls="about-certification" aria-selected="false">인증/특허</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="about-about" role="tabpanel">
+                    <div class="container about">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6 about__img d-none d-md-block">
+                                <img src="Asset/images/banners/about_CI.svg" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <dl>
+                                    <dt>About Us</dt>
+                                    <dd>
+                                        해봄데이터는 2022년 설립 이래 ‘데이터로 바다를 품다’라는 비전 아래, 해양·수산 분야의 디지털 전환을 선도해 온 전문 기업입니다. 
+                                        <br><br>해양수산부, 한국지능정보사회진흥원, 해양환경공단, 국립수산과학원, 한국해양과학기술원 등 유수의 기관과 협력하며, 체계적인 연구데이터 관리부터 최첨단 원격탐사·드론 조사, 블루카본 인벤토리 구축, 교육·홍보 서비스에 이르기까지 토털 솔루션을 제공합니다.
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="row flex-md-row-reverse">
+                            <div class="col-xs-12 col-sm-6 about__img">
+                                <img src="Asset/images/banners/about_vision.jpg" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                                <dl>
+                                    <dt>성과와 비전</dt> 
+                                    <dd>
+                                        2023년 ‘대한민국 녹색기후상’ 수상과 국가 블루카본 인벤토리 구축 과제 수행을 통해 업계 리더로 자리매김했습니다. 
+                                        <br><br>이제 해봄데이터는 해외 해양수산데이터센터 구축 ODA, 대만 국가 해양연구원과의 협업 등 글로벌 무대에서도 영향력을 확대하고 있습니다.
+                                        <br><br>앞으로도 끊임없이 도전하고 혁신하여, 데이터로 바다의 내일을 풍요롭게 여는 든든한 파트너가 되겠습니다.
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="greetings">
+                        <div class="container">
+                            <div class="row banner__contents">
+                                <div class="col-xs-12 col-md-6">
+                                    <div class="banner__title">
+                                        데이터를 통해, 
+                                        <br>새로운 내일과
+                                        <br>더 넓은 바다로 
+                                        <br>나아가기를 
+                                        <br>희망합니다.
+                                    </div>
+                                </div>
+                                <section class="col-xs-12 col-md-6">
+                                    <h3 class="heading">CEO 인사말</h3>
+                                    <div class="banner__desc">
+                                        안녕하세요. 해봄데이터㈜ 대표이사 송태윤입니다.
+                                        <br>먼 바다를 품은 듯 거대한 데이터의 가능성 앞에서, 해봄데이터는 ‘데이터로 바다를 품다’라는 사명 아래 늘 새로운 가치를 창조해 왔습니다. 
+                                        <br>
+                                        <br>설립 초기부터 국내외 연구기관과 협력하여 블루카본 인벤토리 구축과 같은 핵심 연구를 수행하며 기술력을 인정받았고, 그 공로로 ‘대한민국 녹색기후상’을 수상하는 영예를 안았습니다. 
+                                        <br>
+                                        <br>또한 국내를 넘어 4차원 해양그리드데이터 시각화 개발, 해외 해양수산 데이터센터 ODA 프로젝트에 참여하며 우리의 기술력을 세계와 나누고 있습니다.
+                                        <br>짧은 시간 동안 의미 있는 성과를 이루어낸 것은 전적으로 고객 여러분의 신뢰와 임직원의 열정 덕분입니다.
+                                        <br>
+                                        저희는 첨단 원격탐사·드론 기술, 안정적인 오픈소스 기반 정보시스템, 실용적인 교육·홍보 콘텐츠를 통해 해양·수산 분야의 디지털 전환을 선도합니다. 
+                                        <br>
+                                        <br>앞으로도 모든 사용자가 쉽고 안전하게 데이터를 다룰 수 있도록 기술과 서비스를 끊임없이 발전시키겠습니다.
+                                        <br>
+                                        해양환경 보전과 지속가능한 자원 관리, 나아가 인류의 미래를 위한 스마트 솔루션을 제공하는 것이 해봄데이터의 궁극적 목표입니다. 
+                                        <br>
+                                        <br>여러분과 함께 더 넓은 바다로 나아가고, 데이터로 새로운 내일을 열어가기를 희망합니다.
+                                        <br>
+                                        감사합니다. 
+                                    </div>
+                                </section>
+                            </div>
                         </div>
                     </div>
-                    <section class="col-xs-12 col-md-6">
-                        <h3 class="heading">CEO 인사말</h3>
-                        <div class="banner__desc">
-                            안녕하세요. 해봄데이터㈜ 대표이사 송태윤입니다.
-                            <br>먼 바다를 품은 듯 거대한 데이터의 가능성 앞에서, 해봄데이터는 ‘데이터로 바다를 품다’라는 사명 아래 늘 새로운 가치를 창조해 왔습니다. 
-                            <br>
-                            <br>설립 초기부터 국내외 연구기관과 협력하여 블루카본 인벤토리 구축과 같은 핵심 연구를 수행하며 기술력을 인정받았고, 그 공로로 ‘대한민국 녹색기후상’을 수상하는 영예를 안았습니다. 
-                            <br>
-                            <br>또한 국내를 넘어 4차원 해양그리드데이터 시각화 개발, 해외 해양수산 데이터센터 ODA 프로젝트에 참여하며 우리의 기술력을 세계와 나누고 있습니다.
-                            <br>짧은 시간 동안 의미 있는 성과를 이루어낸 것은 전적으로 고객 여러분의 신뢰와 임직원의 열정 덕분입니다.
-                            <br>
-                            저희는 첨단 원격탐사·드론 기술, 안정적인 오픈소스 기반 정보시스템, 실용적인 교육·홍보 콘텐츠를 통해 해양·수산 분야의 디지털 전환을 선도합니다. 
-                            <br>
-                            <br>앞으로도 모든 사용자가 쉽고 안전하게 데이터를 다룰 수 있도록 기술과 서비스를 끊임없이 발전시키겠습니다.
-                            <br>
-                            해양환경 보전과 지속가능한 자원 관리, 나아가 인류의 미래를 위한 스마트 솔루션을 제공하는 것이 해봄데이터의 궁극적 목표입니다. 
-                            <br>
-                            <br>여러분과 함께 더 넓은 바다로 나아가고, 데이터로 새로운 내일을 열어가기를 희망합니다.
-                            <br>
-                            감사합니다. 
+                    <div class="container history">
+                        <div class="row banner__contents">
+                            <h3 class="heading">해봄데이터가 걸어온 길</h3>
+                            <dl class="list-box">
+                                <dt class="list__year">2024</dt>
+                                <dd class="list__list">
+                                    <span class="list__month">06</span>
+                                    <span class="list__desc">해양수산부 「스리랑카 해양수산 데이터센터 및 전자도서관 설립」 사업 공동이행 수주</span>
+                                </dd>                    
+                            </dl>
+                            <dl class="list-box">
+                                <dt class="list__year">2023</dt>
+                                <dd>
+                                    <ul>
+                                        <li class="list__list">
+                                            <span class="list__month">04</span>
+                                            <span class="list__desc">「2023년 전국 블루카본 모니터링」 수행</span>
+                                        </li>
+                                        <li class="list__list">
+                                            <span class="list__month">02</span>
+                                            <span class="list__desc">국회기후변화포럼 2023 대한민국 녹색기후상 수상</span>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <dl class="list-box">
+                                <dt class="list__year">2022</dt>
+                                <dd>
+                                    <ul>
+                                        <li class="list__list">
+                                            <span class="list__month">12</span>
+                                            <span class="list__desc">
+                                                <span>기업 부설연구소 설립</span>
+                                                <span>대만 NAMR MOU 체결</span>
+                                            </span>
+                                        </li>
+                                        <li class="list__list">
+                                            <span class="list__month">11</span>
+                                            <span class="list__desc">(사)한국해양학회 특별학술상(서붕기술상) 수상</span>
+                                        </li>
+                                        <li class="list__list">
+                                            <span class="list__month">04</span>
+                                            <span class="list__desc">「국가 블루카본 온실가스 인벤토리 구축 연구용역」 수행</span>
+                                        </li>
+                                        <li class="list__list">
+                                            <span class="list__month">02</span>
+                                            <span class="list__desc">해봄데이터 설립</span>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
                         </div>
-                    </section>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="container history">
-            <div class="row banner__contents">
-                <h3 class="heading">해봄데이터가 걸어온 길</h3>
-                <dl class="list-box">
-                    <dt class="list__year">2024</dt>
-                    <dd class="list__list">
-                        <span class="list__momtth">06</span>
-                        <span class="list__desc">해양수산부 「스리랑카 해양수산 데이터센터 및 전자도서관 설립」 사업 공동이행 수주</span>
-                    </dd>                    
-                </dl>
-                <dl class="list-box">
-                    <dt class="list__year">2023</dt>
-                    <dd>
-                        <ul>
-                            <li class="list__list">
-                                <span class="list__momtth">04</span>
-                                <span class="list__desc">「2023년 전국 블루카본 모니터링」 수행</span>
+                <div class="tab-pane fade" id="about-awards" role="tabpanel">
+                    <div class="container">
+                        <ul class="award">
+                            <li>
+                                <figure>
+                                    <div>
+                                        <img src="Asset/images/award/2023_Green-Climate-Award.jpg" alt="" class="img-fluid award__img">
+                                        <span class="award__badge">Government Award</span>
+                                    </div>
+                                    <figcaption>
+                                        <dl>
+                                            <dt class="award__year">2023.02</dt>
+                                            <dd class="award__title">2023 대한민국 녹색기후상 우수상</dd>
+                                            <dd class="award__desc">국회기후변화포럼 2023 대한민국 녹색기후상 장관/국회상임위원장상(우수상) 수상</dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
                             </li>
-                            <li class="list__list">
-                                <span class="list__momtth">02</span>
-                                <span class="list__desc">국회기후변화포럼 2023 대한민국 녹색기후상 수상</span>
+                            <li>
+                                <figure>
+                                    <div>
+                                        <img src="Asset/images/award/2022_Korean-Society-of-Oceanography-Special-Academic-Award.jpg" alt="" class="img-fluid award__img">
+                                        <span class="award__badge">Academic Society Award</span>
+                                    </div>
+                                    <figcaption>
+                                        <dl>
+                                            <dt class="award__year">2022.11</dt>
+                                            <dd class="award__title">(사)한국해양학회 특별 학술상 수상</dd>
+                                            <dd class="award__desc">(사)한국해양학회 특별 학술상(서붕 기술상) 수상</dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
                             </li>
-                        </ul>
-                    </dd>
-                </dl>
-                <dl class="list-box">
-                    <dt class="list__year">2022</dt>
-                    <dd>
-                        <ul>
-                            <li class="list__list">
-                                <span class="list__momtth">12</span>
-                                <span class="list__desc">
-                                    <span>기업 부설연구소 설립</span>
-                                    <span>대만 NAMR MOU 체결</span>
-                                </span>
-                            </li>
-                            <li class="list__list">
-                                <span class="list__momtth">11</span>
-                                <span class="list__desc">(사)한국해양학회 특별학술상(서붕기술상) 수상</span>
-                            </li>
-                            <li class="list__list">
-                                <span class="list__momtth">04</span>
-                                <span class="list__desc">「국가 블루카본 온실가스 인벤토리 구축 연구용역」 수행</span>
-                            </li>
-                            <li class="list__list">
-                                <span class="list__momtth">02</span>
-                                <span class="list__desc">해봄데이터 설립</span>
+                            <li>
+                                <figure>
+                                    <div>
+                                        <img src="Asset/images/award/2021_Data-Quality-Certification.jpg" alt="" class="img-fluid award__img">
+                                        <span class="award__badge">Certificate of Data</span>
+                                    </div>
+                                    <figcaption>
+                                        <dl>
+                                            <dt class="award__year">2021.11</dt>
+                                            <dd class="award__title">데이터 품질인증 Platinum Class</dd>
+                                            <dd class="award__desc">한국데이터산업진흥원 데이터 품질인증 Platinum Class 획득</dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
                             </li>
                         </ul>
-                    </dd>
-                </dl>
-            </div>
-        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="about-certification" role="tabpanel">
+                    <div class="container">
+                        <ul class="certification">
+                            <li>
+                                <figure>
+                                    <img src="Asset/images/certification/Professional-ResearchBusiness-egistration-Certificate.jpg" alt="" class="img-fluid border border--radius">
+                                    <figcaption>
+                                        전문연구사업자 신고증
+                                        <br>25.11.19
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="Asset/images/certification/Direct-Production-Confirmation-Certificate_Information-System-Maintenance.jpg" alt="" class="img-fluid border border--radius">
+                                    <figcaption>
+                                        직접생산확인 증명서
+                                        <br>정보시스템유지관리
+                                        <br>25.07.21
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="Asset/images/certification/Software-Business-General-Status-Management-Confirmation.jpg" alt="" class="img-fluid border border--radius">
+                                    <figcaption>
+                                        소프트웨어사업자
+                                        <br>일반 현황 관리확인서
+                                        <br>25.05.08
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="Asset/images/certification/Small-Medium-Business-Certificate.jpg" alt="" class="img-fluid border border--radius">
+                                    <figcaption>
+                                        중소기업 확인서
+                                        <br>25.03.17
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="Asset/images/certification/Direct-Production-Verification-Certificate_Information-System-Development-Service.jpg" alt="" class="img-fluid border border--radius">
+                                    <figcaption>
+                                        직접생산확인증명서
+                                        <br>정보시스템개발서비스
+                                        <br>24.05.02
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="Asset/images/certification/Video-production-work-report.jpg" alt="" class="img-fluid border border--radius">
+                                    <figcaption>
+                                        비디오물제작업 신고증
+                                        <br>23.05.10
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="Asset/images/certification/Corporate-Research-Institute-Certificate.jpg" alt="" class="img-fluid border border--radius">
+                                    <figcaption>
+                                        기업부설연구소 인증서
+                                        <br>22.12.28
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="Asset/images/certification/Ultralight-Aircraft-Operation-Business-Registration-Certificate.jpg" alt="" class="img-fluid border border--radius">
+                                    <figcaption>
+                                        초경량비행장치<br>사용사업 등록증
+                                        <br>22.08.03
+                                    </figcaption>
+                                </figure>
+                            </li>
+
+                            <li>
+                                <figure>
+                                    <img src="Asset/images/certification/해양조사정보업등록증.png" alt="" class="img-fluid border border--radius">
+                                    <figcaption>
+                                            해양조사정보업<br>등록증
+                                        <br>26.03.16
+                                    </figcaption>
+                                </figure>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>            
+        </div>        
     </main>
     <footer class="footer">
         <div class="container">
             <div class="row justify-content-between">
-                <div class="col-xs-12 col-md-8">
-                    <div class="row">
-                        <div class="col-xs-12 col-md-6">
-                            <div class="footer__header">
-                                <h2 class="footer__title">
-                                    <img src="Asset/images/company/CI_light.svg" class="" alt="해봄데이터">
-                                    <span class="a11y-hidden">해봄데이터</span>
-                                </h2>
-                                <p class="footer__desc">
-                                    데이터 속의 바다, 바다 속의 데이터. 
-                                    <br>새로운 가능성을 열어드립니다.
-                                </p>                        
-                            </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-5">
+                        <div class="footer__header">
+                            <h2 class="footer__title">
+                                <img src="Asset/images/company/CI_light.svg" class="" alt="해봄데이터">
+                                <span class="a11y-hidden">해봄데이터</span>
+                            </h2>
+                            <p class="footer__desc">
+                                데이터 속의 바다, 바다 속의 데이터. 
+                                <br>새로운 가능성을 열어드립니다.
+                            </p>                        
                         </div>
-                        <div class="col-xs-12 col-md-6">
-                            <address class="footer__address">
-                                <dl>
+                        <dl class="footer__sns">
+                            <dt>Socialmedia</dt>
+                            <dd>
+                                <a href="https://youtu.be/jB8tlKFVX4s?si=gMOtMrSRiS5__p4d" target="_blank">
+                                    <span class="icon--img icon--youtube"></span>
+                                    <span>Youtube</span>
+                                </a>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="col-xs-12 col-md-5">
+                        <address class="footer__address">
+                            <dl>
+                                <div>
                                     <dt>Address</dt>
-                                    <dd>서울특별시 금천구 가산디지털1로 205-27, 904호<br>(가산동, 가산 A1타워)</dd>
+                                    <dd>08503 서울특별시 금천구 가산디지털1로 205-27, 904호<br>(가산동, 가산 A1타워)</dd>
+                                </div>
+                                <div>
                                     <dt>Number</dt>
                                     <dd>
                                         <a href="tel:+82-6959-0632">02-6959-0632</a>
                                     </dd>
+                                </div>
+                                <div>
                                     <dt>E-mail</dt>
                                     <dd>
                                         <a href="mailto:info@haebomdata.com" target="_blank">info@haebomdata.com</a>
                                     </dd>
-                                </dl>
-                            </address>
-                        </div>                        
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-4">
-                    <div class="row">
-                        <div class="col-xs-12 col-md-6">
-                            <dl class="footer__sns">
-                                <dt>Socialmedia</dt>
-                                <dd>
-                                    <a href="https://www.youtube.com/@haebomdata" target="_blank" rel="noopener noreferrer">
-                                        <span class="icon--img icon--youtube"></span>
-                                        <span>Youtube</span>
-                                    </a>
-                                </dd>
+                                </div>
                             </dl>
-                        </div>
-                        <dl class="col-xs-12 col-md-6 footer__nav">
+                        </address>
+                    </div>                        
+                    <div class="col-xs-12 col-md-2">
+                        <dl class="footer__nav">
                             <dt>Information</dt>
                             <dd>
                                 <a href="index.html">Home</a>                                
@@ -242,7 +403,7 @@
                                 <a href="about.html">회사소개</a>                                
                             </dd>
                             <dd>
-                                <a href="business.html">사업분유</a>                                
+                                <a href="solutions.html">사업분야</a>                                
                             </dd>
                             <dd>
                                 <a href="projects.html">주요사례</a>                                
@@ -250,8 +411,7 @@
                             <dd>
                                 <a href="map.html">오시는 길</a>                                
                             </dd>
-                        </dl>
-                        
+                        </dl>                       
                     </div>
                 </div>
                 <p class="copyright"> ⓒ HAEBOM DATA ALL RIGHTS RESERVED., 2025</p>
@@ -260,11 +420,9 @@
     </footer>
     <script>
         // 메인메뉴 for 모바일
-        $(document).ready(function() {
-            $('.navbar-icon').click(function(){
-                $(this).toggleClass("active");
-                $(".navbar-menu nav").toggleClass("active");
-            });
+        $('.navbar-icon').click(function(){
+            $(this).toggleClass("active");
+            $(".navbar-menu nav").toggleClass("active");
         });
     </script>
     <script>

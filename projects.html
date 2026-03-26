@@ -32,10 +32,10 @@
                                         <a href="about.html" class="">회사소개</a>
                                     </li>
                                     <li>
-                                        <a href="business.html" class="">사업분야</a>
+                                        <a href="solutions.html" class="">사업분야</a>
                                     </li>
                                     <li>
-                                        <a href="projects.html" class="active">주요사례</a>
+                                        <a href="projects.html" class="">주요사례</a>
                                     </li>
                                     <li>
                                         <a href="map.html" class="">오시는길</a>
@@ -53,9 +53,11 @@
     </div>
     <main class="main">
         <div class="banner banner-top banner--projects">
-            <svg class="wave" viewBox="0 0 1440 200" preserveAspectRatio="none">
-                <path fill="#fff" d="M1440,100 C960,0 480,200 0,100 L0,200 L1440,200 Z"></path>
-            </svg>
+            <div class="wave-wrap">
+                <svg class="wave" viewBox="0 0 1440 200" preserveAspectRatio="none">
+                    <path fill="#fff" d="M1440,100 C960,0 480,200 0,100 L0,200 L1440,200 Z"></path>
+                </svg>
+            </div>
             <div class="banner__contents">
                 <h2 class="banner__title">
                     주요 사례 / Key Projects
@@ -63,9 +65,9 @@
             </div>
         </div>
         <div class="container">
-            <div class="">
+            <div class="pl-1 pr-1">
                 <h3 class="heading">주요 사례</h3> 
-                <div class="desc">
+                <div class="desc mt-5 mb-5">
                     해봄데이터(주)는 해양 IT 분야에서의 다양한 경험을 통해 강력한 해양 데이터 생태계를 구축하고,
                     <br>나아가 맞춤형 데이터 서비스와 솔루션을 통해 탁월한 가치를 제공하고 있습니다.
                 </div>
@@ -85,9 +87,6 @@
                             <br> 정보시스템은 NARA에서 생산하는 연구데이터와 국제 공용데이터를 수집·통합하여 메타데이터 기반으로 관리하고 데이터 활용 서비스를 제공합니다.
                         </dd>
                         <dd class="project__year">2024 ~</dd>
-                        <!-- <dd class="project__link">
-                            <a href="" class="button--sm button--line button--primary">Website shortcut</a>
-                        </dd> -->
                     </dl>
                 </div>
                 <div class="col-xs-12 col-sm-6 h-100">
@@ -99,9 +98,7 @@
                                 스리랑카 해양수산 데이터센터 및 
                                 <br>전자 도서관 정보시스템 구축
                             </div>
-                            <!-- <div class="project__link">
-                                <a href="" class="button--sm button--line button--primary">Website shortcut</a>
-                            </div> -->
+                            <div class="project__badge">Data Management System</div>
                         </figcaption>
                     </figure>
                 </div>
@@ -117,12 +114,15 @@
                             <img src="Asset/images/banners/projects_bluecarbon_full.jpg" alt=""  class="img-fluid border">
                         </dd>
                         <dd class="project__desc">
-                            한국지능정보사회진흥원(NIA)이 주관한 ‘연안분야 빅데이터 
-                            <br>플랫폼 및 센터 구축’사업에 국립수산과학원 센터의 참여기업으로 선정되어 3년간 과제에 참여하였으며, 이를 통해 연안 및 수산 분야의 빅데이터 수집·분석 기반 구축에 기여하였습니다.
+                            우리나라의 블루카본은 IPCC에서 인정하는 염습지와 해초대 및 잠재적인 흡수원이 될 수 있는  비식생 갯벌이 있습니다. 
+                            <br>이러한 블루카본의 분포면적을 위성영상으로 산출하는 방법론을 개발하여 인벤토리 산정에 사용하고 있고, 블루카본의 현황 정보를 제공할 수 있는 정보시스템을 구축·관리하고 있습니다.
                         </dd>
                         <dd class="project__year">2022 ~</dd>
                         <dd class="project__link">
-                            <a href="https://bluecarbon.kr" target="_blank" class="button--sm button--line button--primary">Website shortcut</a>
+                            <a href="https://bluecarbon.kr" target="_blank">
+                                <span>Website</span>
+                                <span class="icon--img icon--next icon--color"></span>
+                            </a>
                         </dd>
                     </dl>
                 </div>
@@ -134,8 +134,12 @@
                             <div class="project__title">
                                 전국 블루카본 모니터링
                             </div>
+                            <div class="project__badge">Data Analysis & Services</div>
                             <div class="project__link">
-                                <a href="https://bluecarbon.kr" target="_blank" class="button--sm button--line button--primary">Website shortcut</a>
+                                <a href="https://bluecarbon.kr" target="_blank">
+                                    <span>Website</span>
+                                    <span class="icon--img icon--next icon--white"></span>
+                                </a>
                             </div>
                         </figcaption>
                     </figure>
@@ -152,13 +156,16 @@
                             <img src="Asset/images/banners/projects_bigdata-coast_full.jpg" alt=""  class="img-fluid border">
                         </dd>
                         <dd class="project__desc">
-                            스리랑카 해양수산 정보공유 활성화를 위해 스리랑카 수산연구소(NARA)와 협력하여 FAIR 원칙에 기반한 해양수산 데이터센터 및 전자도서관 정보시스템을 구축하고 있습니다. 
-                            <br> 정보시스템은 NARA에서 생산하는 연구데이터와 국제 공용데이터를 수집·통합하여 메타데이터 기반으로 관리하고 데이터 활용 서비스를 제공합니다.
+                            한국지능정보사회진흥원(NIA)이 주관한 ‘연안분야 빅데이터 플랫폼 및 센터 구축’ 사업에 국립수산과학원 센터의 참여기업으로 선정되어 3년간 과제에 참여하였으며, 이를 통해 연안 및 수산 분야의 빅데이터 수집·분석 기반 구축에 기여하였습니다.
                         </dd>
                         <dd class="project__year">2022 ~ 2024</dd>
                         <dd class="project__link">
-                            <a href="https://www.bigdata-coast.kr/" target="_blank" class="button--sm button--line button--primary">Website shortcut</a>
+                            <a href="https://www.bigdata-coast.kr/" target="_blank">
+                                <span>Website</span>
+                                <span class="icon--img icon--next icon--white"></span>
+                            </a>
                         </dd>
+                        
                     </dl>
                 </div>
                 <div class="col-xs-12 col-sm-6 h-100">
@@ -170,8 +177,12 @@
                                 연안분야 빅데이터 
                                 <br>플랫폼 및 센터 구축
                             </div>
+                            <div class="project__badge">Data Analysis & Services</div>
                             <div class="project__link">
-                                <a href="https://www.bigdata-coast.kr/" target="_blank" class="button--sm button--line button--primary">Website shortcut</a>
+                                <a href="https://www.bigdata-coast.kr/" target="_blank">
+                                    <span>Website</span>
+                                    <span class="icon--img icon--next icon--white"></span>
+                                </a>
                             </div>
                         </figcaption>
                     </figure>
@@ -188,13 +199,9 @@
                             <img src="Asset/images/banners/projects_JOISS.jpg" alt=""  class="img-fluid border">
                         </dd>
                         <dd class="project__desc">
-                            한국지능정보사회진흥원(NIA)이 주관한 ‘연안분야 빅데이터 
-                            <br>플랫폼 및 센터 구축’사업에 국립수산과학원 센터의 참여기업으로 선정되어 3년간 과제에 참여하였으며, 이를 통해 연안 및 수산 분야의 빅데이터 수집·분석 기반 구축에 기여하였습니다.
+                            해양수산부의 ‘해양과학조사 및 예보기술개발 R&D 사업’의 주관기관으로 참여하여, 해양 연구데이터의 개방과 활용 활성화를 위한 관할해역 해양정보 공동활용 시스템(JOISS)을 개발 및 운영하였습니다.
                         </dd>
                         <dd class="project__year">2022</dd>
-                        <!-- <dd class="project__link">
-                            <a href="" target="_blank" class="button--sm button--line button--primary">Website shortcut</a>
-                        </dd> -->
                     </dl>
                 </div>
                 <div class="col-xs-12 col-sm-6 h-100">
@@ -206,9 +213,7 @@
                                 관할해역 해양정보
                                 <br>공동활용 체계 구축
                             </div>
-                            <!-- <div class="project__link">
-                                <a href="" target="_blank" class="button--sm button--line button--primary">Website shortcut</a>
-                            </div> -->
+                            <div class="project__badge">Data Management System</div>
                         </figcaption>
                     </figure>
                 </div>
@@ -228,9 +233,6 @@
                             <br>또한 해양 환경에 대한 인식을 높이고, 데이터 활용 능력을 키워 지속 가능한 해양 개발에 동참할 수 있는 장을 마련하였습니다.
                         </dd>
                         <dd class="project__year">2022 ~ 2024</dd>
-                        <!-- <dd class="project__link">
-                            <a href="" target="_blank" class="button--sm button--line button--primary">Website shortcut</a>
-                        </dd> -->
                     </dl>
                 </div>
                 <div class="col-xs-12 col-sm-6 h-100">
@@ -242,9 +244,7 @@
                                 해양수산 과학기술
                                 <br>빅데이터 경진대회
                             </div>
-                            <!-- <div class="project__link">
-                                <a href="" target="_blank" class="button--sm button--line button--primary">Website shortcut</a>
-                            </div> -->
+                            <div class="project__badge">Data Literacy Edu & Marketing</div>
                         </figcaption>
                     </figure>
                 </div>
@@ -309,52 +309,52 @@
     <footer class="footer">
         <div class="container">
             <div class="row justify-content-between">
-                <div class="col-xs-12 col-md-8">
-                    <div class="row">
-                        <div class="col-xs-12 col-md-6">
-                            <div class="footer__header">
-                                <h2 class="footer__title">
-                                    <img src="Asset/images/company/CI_light.svg" class="" alt="해봄데이터">
-                                    <span class="a11y-hidden">해봄데이터</span>
-                                </h2>
-                                <p class="footer__desc">
-                                    데이터 속의 바다, 바다 속의 데이터. 
-                                    <br>새로운 가능성을 열어드립니다.
-                                </p>                        
-                            </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-5">
+                        <div class="footer__header">
+                            <h2 class="footer__title">
+                                <img src="Asset/images/company/CI_light.svg" class="" alt="해봄데이터">
+                                <span class="a11y-hidden">해봄데이터</span>
+                            </h2>
+                            <p class="footer__desc">
+                                데이터 속의 바다, 바다 속의 데이터. 
+                                <br>새로운 가능성을 열어드립니다.
+                            </p>                        
                         </div>
-                        <div class="col-xs-12 col-md-6">
-                            <address class="footer__address">
-                                <dl>
+                        <dl class="footer__sns">
+                            <dt>Socialmedia</dt>
+                            <dd>
+                                <a href="https://youtu.be/jB8tlKFVX4s?si=gMOtMrSRiS5__p4d" target="_blank">
+                                    <span class="icon--img icon--youtube"></span>
+                                    <span>Youtube</span>
+                                </a>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="col-xs-12 col-md-5">
+                        <address class="footer__address">
+                            <dl>
+                                <div>
                                     <dt>Address</dt>
-                                    <dd>서울특별시 금천구 가산디지털1로 205-27, 904호<br>(가산동, 가산 A1타워)</dd>
+                                    <dd>08503 서울특별시 금천구 가산디지털1로 205-27, 904호<br>(가산동, 가산 A1타워)</dd>
+                                </div>
+                                <div>
                                     <dt>Number</dt>
                                     <dd>
                                         <a href="tel:+82-6959-0632">02-6959-0632</a>
                                     </dd>
+                                </div>
+                                <div>
                                     <dt>E-mail</dt>
                                     <dd>
                                         <a href="mailto:info@haebomdata.com" target="_blank">info@haebomdata.com</a>
                                     </dd>
-                                </dl>
-                            </address>
-                        </div>                        
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-4">
-                    <div class="row">
-                        <div class="col-xs-12 col-md-6">
-                            <dl class="footer__sns">
-                                <dt>Socialmedia</dt>
-                                <dd>
-                                    <a href="https://www.youtube.com/@haebomdata" target="_blank" rel="noopener noreferrer">
-                                        <span class="icon--img icon--youtube"></span>
-                                        <span>Youtube</span>
-                                    </a>
-                                </dd>
+                                </div>
                             </dl>
-                        </div>
-                        <dl class="col-xs-12 col-md-6 footer__nav">
+                        </address>
+                    </div>                        
+                    <div class="col-xs-12 col-md-2">
+                        <dl class="footer__nav">
                             <dt>Information</dt>
                             <dd>
                                 <a href="index.html">Home</a>                                
@@ -363,7 +363,7 @@
                                 <a href="about.html">회사소개</a>                                
                             </dd>
                             <dd>
-                                <a href="business.html">사업분유</a>                                
+                                <a href="solutions.html">사업분야</a>                                
                             </dd>
                             <dd>
                                 <a href="projects.html">주요사례</a>                                
@@ -371,8 +371,7 @@
                             <dd>
                                 <a href="map.html">오시는 길</a>                                
                             </dd>
-                        </dl>
-                        
+                        </dl>                        
                     </div>
                 </div>
                 <p class="copyright"> ⓒ HAEBOM DATA ALL RIGHTS RESERVED., 2025</p>
@@ -381,11 +380,9 @@
     </footer>
     <script>
         // 메인메뉴 for 모바일
-        $(document).ready(function() {
-            $('.navbar-icon').click(function(){
-                $(this).toggleClass("active");
-                $(".navbar-menu nav").toggleClass("active");
-            });
+        $('.navbar-icon').click(function(){
+            $(this).toggleClass("active");
+            $(".navbar-menu nav").toggleClass("active");
         });
     </script>
 

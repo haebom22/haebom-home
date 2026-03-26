@@ -1,0 +1,28 @@
+# OS
+.DS_Store
+
+# 업데이트 소스 원본
+home_v1.1_source/
+
+# SCSS 소스 (style.css로 이미 컴파일됨)
+Asset/scss/abstracts/
+Asset/scss/base/
+Asset/scss/components/
+Asset/scss/layout/
+Asset/scss/pages/
+Asset/scss/style.scss
+
+# Bootstrap SCSS 원본 및 빌드 진입점
+Asset/scss/vendors/bootstrap-5.2.3/
+Asset/scss/vendors/*.scss
+
+# 소스맵 (디버그용)
+Asset/scss/*.map
+Asset/scss/vendors/*.map
+Asset/js/*.map
+
+# JS vendor 모듈 (bootstrap.bundle.js에 번들됨)
+Asset/js/vendor/
+
+# IDE
+.cursor/
